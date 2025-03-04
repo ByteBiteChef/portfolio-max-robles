@@ -2,7 +2,7 @@ import React from "react";
 import CarouselComponent from "../components/carousel/Carousel";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
-import Navside from "../components/navbar/Navside";
+
 const Home = () => {
 	return (
 		<div>
