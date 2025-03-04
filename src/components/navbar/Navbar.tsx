@@ -31,7 +31,7 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<div className="raleway flex items-center justify-between p-4 mx-10 sticky top-6">
+		<div className="raleway flex items-center justify-between p-12 sticky top-0">
 			<a href="/" className="text-2xl font-bold">
 				Max
 				<br />
