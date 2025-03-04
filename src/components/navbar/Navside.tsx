@@ -31,7 +31,7 @@ const Navside = () => {
 	}, []);
 
 	return (
-		<div className="flex top-1/2 -translate-y-1/2 sticky z-50 ml-4">
+		<div className="flex w-1/2 top-1/2 -translate-y-1/2 sticky z-50 ml-4">
 			<div className="flex flex-col items-start">
 				<a
 					href="#profile"
