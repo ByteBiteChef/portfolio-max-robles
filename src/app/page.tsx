@@ -1,5 +1,7 @@
 import React from "react";
 import CarouselComponent from "../components/carousel/Carousel";
+import { IoLogoGithub } from "react-icons/io";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Home = () => {
 	return (
@@ -40,12 +42,23 @@ const Home = () => {
 				</div>
 			</section>
 
-			<section id="showcases" className="h-screen flex justify-center">
-				<div className="flex flex-col items-center justify-center">
-					<div className="flex w-full p-8">
-						<h1 className="text-4xl font-bold">Showcases</h1>
+			<section
+				id="showcases"
+				className="raleway h-screen flex justify-center"
+			>
+				<div className="flex flex-col items-center justify-center w-2/3">
+					<div className="flex flex-col w-full py-8">
+						<h1 className="text-2xl font-bold">Showcases.</h1>
+						<p className="opacity-40 w-1/2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Pulvinar et consectetur quam integer sit
+							blandit nulla. Metus magna erat pretium a, tincidunt
+							vitae.
+						</p>
 					</div>
-					<CarouselComponent />
+					<div className="flex flex-col w-full">
+						<CarouselComponent />
+					</div>
 				</div>
 			</section>
 
@@ -57,10 +70,35 @@ const Home = () => {
 			</section>
 
 			<section
-				id="contact"
-				className="h-screen flex flex-col items-center justify-center"
+				id="showcases"
+				className="raleway h-screen flex justify-center"
 			>
-				<h1 className="text-4xl font-bold">Contact</h1>
+				<div className="flex flex-col items-center justify-center w-2/3">
+					<div className="flex flex-col w-full py-8 ">
+						<h1 className="text-2xl font-bold">Contact!</h1>
+						<p className="opacity-40 w-1/2">
+							Feel free to reach out if you want a to build
+							something together, have a question, or just want to
+							connect.
+						</p>
+						<div className="flex flex-col w-full py-2">
+							<a
+								className="underline font-raleway font-semibold text-lg"
+								href="mailto:maxirobles123@gmail.com"
+							>
+								maxirobles123@gmail.com
+							</a>
+							<div className="flex flex-row gap-2 mt-4">
+								<a href="https://github.com/ByteBiteChef">
+									<IoLogoGithub className="text-xl" />
+								</a>
+								<a href="https://www.linkedin.com/in/max-robles-dev/">
+									<FaLinkedinIn className="text-xl" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 	);

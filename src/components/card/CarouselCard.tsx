@@ -30,7 +30,7 @@ const Card = ({ data }: { data: CardData }) => {
 				</div>
 			</div>
 			<div>
-				<h2 className="text-lg font-bold">{data.title}</h2>
+				<h2 className="text-lg font-bold my-2">{data.title}</h2>
 				<p className="text-sm">{data.description}</p>
 			</div>
 			<a href={data.link} className="text-md">
