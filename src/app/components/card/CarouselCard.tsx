@@ -10,7 +10,7 @@ interface CardData {
 
 const Card = ({ data }: { data: CardData }) => {
 	return (
-		<div className="relative w-80 h-96 overflow-hidden rounded-2xl cursor-pointer group">
+		<div className="relative w-90 h-60 overflow-hidden rounded-lg cursor-pointer group">
 			<div
 				className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
 				style={{ backgroundImage: `url(${data.bgImage})` }}

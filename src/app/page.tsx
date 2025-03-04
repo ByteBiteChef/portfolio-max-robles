@@ -53,7 +53,9 @@ const Home = () => {
 				className="h-screen flex flex-col items-center justify-center"
 			>
 				<h1 className="text-4xl font-bold">Showcases</h1>
-				<Card data={cardData} />
+				<div>
+					<Card data={cardData} />
+				</div>
 			</section>
 
 			<section
