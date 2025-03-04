@@ -1,6 +1,15 @@
 import React from "react";
+import Card from "./components/card/CarouselCard";
 
 const Home = () => {
+	const cardData = {
+		bgImage:
+			"https://plus.unsplash.com/premium_photo-1683865776032-07bf70b0add1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		stack1: "React",
+		stack2: "Next.js",
+		stack3: "Tailwind CSS",
+		stack4: "TypeScript",
+	};
 	return (
 		<div>
 			<section id="profile" className="h-screen flex justify-center">
@@ -44,6 +53,7 @@ const Home = () => {
 				className="h-screen flex flex-col items-center justify-center"
 			>
 				<h1 className="text-4xl font-bold">Showcases</h1>
+				<Card data={cardData} />
 			</section>
 
 			<section
