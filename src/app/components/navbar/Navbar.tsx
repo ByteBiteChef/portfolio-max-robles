@@ -1,15 +1,14 @@
-import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
 	return (
-		<div className="flex items-center justify-between p-4 mx-10 sticky top-6">
+		<div className="raleway flex items-center justify-between p-4 mx-10 sticky top-6">
 			<h1 className="text-2xl font-bold">Navbar</h1>
 			<div className="flex items-center gap-4">
 				<a href="#profile" className="cursor-pointer">
 					Profile
 				</a>
-				<a href="#showcases" className="cursor-pointer">
+				<a href="#showcases" className=" cursor-pointer">
 					Showcases
 				</a>
 				<a href="#projects" className="cursor-pointer">
