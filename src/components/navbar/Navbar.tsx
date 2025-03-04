@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -32,11 +33,11 @@ const Navbar = () => {
 
 	return (
 		<div className="raleway flex items-center justify-between p-12 sticky top-0">
-			<a href="/" className="text-2xl font-bold">
+			<Link href="/" className="text-2xl font-bold">
 				Max
 				<br />
 				Robles.
-			</a>
+			</Link>
 			<div className="flex items-center gap-4">
 				<a
 					href="#profile"
