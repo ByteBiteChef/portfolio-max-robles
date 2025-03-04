@@ -32,7 +32,9 @@ const Navbar = () => {
 
 	return (
 		<div className="raleway flex items-center justify-between p-4 mx-10 sticky top-6">
-			<h1 className="text-2xl font-bold">Navbar</h1>
+			<a href="/" className="text-2xl font-bold">
+				Navbar
+			</a>
 			<div className="flex items-center gap-4">
 				<a
 					href="#profile"
