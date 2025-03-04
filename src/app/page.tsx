@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./components/card/CarouselCard";
+import Card from "../components/card/CarouselCard";
 
 const Home = () => {
 	const cardData = {
