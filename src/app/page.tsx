@@ -6,7 +6,6 @@ import Navside from "../components/navbar/Navside";
 const Home = () => {
 	return (
 		<div>
-			<Navside />
 			<section id="profile" className="h-screen flex justify-center">
 				<div className="raleway flex justify-center items-center">
 					<div className="flex max-w-[500px] flex-col gap-4 p-6">
