@@ -42,8 +42,8 @@ const Navbar = () => {
 					href="#profile"
 					className={`cursor-pointer ${
 						activeSection === "profile"
-							? "border-b-2 border-[#A84E4F]"
-							: ""
+							? "border-b-2 border-[#A84E4F] opacity-100"
+							: "opacity-50"
 					}`}
 				>
 					Profile
@@ -52,8 +52,8 @@ const Navbar = () => {
 					href="#showcases"
 					className={`cursor-pointer ${
 						activeSection === "showcases"
-							? "border-b-2 border-[#A84E4F]"
-							: ""
+							? "border-b-2 border-[#A84E4F] opacity-100"
+							: "opacity-50"
 					}`}
 				>
 					Showcases
@@ -62,8 +62,8 @@ const Navbar = () => {
 					href="#projects"
 					className={`cursor-pointer ${
 						activeSection === "projects"
-							? "border-b-2 border-[#A84E4F]"
-							: ""
+							? "border-b-2 border-[#A84E4F] opacity-100"
+							: "opacity-50"
 					}`}
 				>
 					Projects
@@ -72,8 +72,8 @@ const Navbar = () => {
 					href="#contact"
 					className={`cursor-pointer ${
 						activeSection === "contact"
-							? "border-b-2 border-[#A84E4F]"
-							: ""
+							? "border-b-2 border-[#A84E4F] opacity-100"
+							: "opacity-50"
 					}`}
 				>
 					Contact
