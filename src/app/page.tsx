@@ -70,7 +70,7 @@ const Home = () => {
 			</section>
 
 			<section
-				id="showcases"
+				id="contact"
 				className="raleway h-screen flex justify-center"
 			>
 				<div className="flex flex-col items-center justify-center w-2/3">
