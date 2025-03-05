@@ -99,7 +99,7 @@ const Home = () => {
 							vitae.
 						</p>
 					</div>
-					<div className="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-4">
+					<div className="flex flex-col lg:flex-row xl:flex-row gap-4">
 						{ghCard.map((ghCard) => (
 							<GhCard ghCard={ghCard} key={ghCard.title} />
 						))}
