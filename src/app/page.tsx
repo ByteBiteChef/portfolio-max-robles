@@ -3,7 +3,7 @@ import CarouselComponent from "../components/carousel/Carousel";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
 import GhCard from "../components/card/GhCard";
-
+import GitHubContributions from "../components/githubContributions/GitHubContributions";
 const Home = () => {
 	const ghCard = [
 		{
@@ -105,6 +105,7 @@ const Home = () => {
 							<GhCard ghCard={ghCard} key={ghCard.title} />
 						))}
 					</div>
+					<GitHubContributions />
 				</div>
 			</section>
 
