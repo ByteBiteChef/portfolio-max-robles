@@ -98,7 +98,7 @@ const GitHubContributions = () => {
 	);
 
 	return (
-		<div className="flex flex-col w-full mt-10">
+		<div className="flex-col w-full mt-10 hidden xl:block">
 			<h2 className="text-xl font-bold mb-4 font-raleway">
 				My GitHub Contributions.
 			</h2>

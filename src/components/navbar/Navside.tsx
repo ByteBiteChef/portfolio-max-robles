@@ -31,8 +31,8 @@ const Navside = () => {
 	}, []);
 
 	return (
-		<div className="flex w-12 top-1/2 -translate-y-1/2 fixed z-50 ml-12">
-			<div className="flex flex-col items-start">
+		<div className="w-12 top-1/2 -translate-y-1/2 fixed z-50 ml-12 hidden xl:block">
+			<div className="flex flex-col items-start ">
 				<a
 					href="#profile"
 					className={`cursor-pointer border-b-2 hover:w-8 transition-all duration-300 h-4 mt-2 ${
