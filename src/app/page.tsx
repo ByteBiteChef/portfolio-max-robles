@@ -2,8 +2,32 @@ import React from "react";
 import CarouselComponent from "../components/carousel/Carousel";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
+import GhCard from "../components/card/GhCard";
 
 const Home = () => {
+	const ghCard = [
+		{
+			title: "algos.es",
+			link: "https://github.com/ByteBiteChef/algos.es",
+			description:
+				"A website to learn algorithms and data structures in Spanish.",
+			language: "TypeScript",
+		},
+		{
+			title: "sisFed",
+			link: "https://github.com/ByteBiteChef/sisFed",
+			description:
+				"A web app to administrate Voleyball Tucuman's Federation league.",
+			language: "TypeScript",
+		},
+		{
+			title: "gymTracker",
+			link: "https://github.com/ByteBiteChef/gymTrack",
+			description:
+				"A PWA to track your gym progress, a weekend hackaton project.",
+			language: "TypeScript",
+		},
+	];
 	return (
 		<div>
 			<section id="profile" className="h-screen flex justify-center">
@@ -64,9 +88,24 @@ const Home = () => {
 
 			<section
 				id="projects"
-				className="h-screen flex flex-col items-center justify-center"
+				className="raleway h-screen flex justify-center"
 			>
-				<h1 className="text-4xl font-bold">Projects</h1>
+				<div className="flex flex-col items-center justify-center w-2/3">
+					<div className="flex flex-col w-full py-8">
+						<h1 className="text-2xl font-bold">Projects.</h1>
+						<p className="opacity-40 w-1/2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Pulvinar et consectetur quam integer sit
+							blandit nulla. Metus magna erat pretium a, tincidunt
+							vitae.
+						</p>
+					</div>
+					<div className="flex gap-4">
+						{ghCard.map((ghCard) => (
+							<GhCard ghCard={ghCard} key={ghCard.title} />
+						))}
+					</div>
+				</div>
 			</section>
 
 			<section
