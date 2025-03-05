@@ -33,7 +33,7 @@ const Navbar = () => {
 
 	return (
 		<div className="raleway flex items-center justify-between p-12 sticky top-0">
-			<Link href="/" className="text-2xl font-bold">
+			<Link href="/" className="text-2xl roboto-slab">
 				Max
 				<br />
 				Robles.

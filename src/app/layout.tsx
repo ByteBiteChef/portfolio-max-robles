@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Raleway } from "next/font/google";
+import { Geist, Geist_Mono, Raleway, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/navbar/Navbar";
 import Navside from "@/components/navbar/Navside";
 import NavContact from "@/components/navbar/NavContact";
+
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
@@ -16,6 +17,12 @@ const geistMono = Geist_Mono({
 
 const raleway = Raleway({
 	variable: "--font-raleway",
+	subsets: ["latin"],
+	display: "swap",
+});
+
+const robotoSlab = Roboto_Slab({
+	variable: "--font-roboto-slab",
 	subsets: ["latin"],
 	display: "swap",
 });
@@ -33,7 +40,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${robotoSlab.variable} antialiased`}
 			>
 				<Navbar />
 				<Navside />
