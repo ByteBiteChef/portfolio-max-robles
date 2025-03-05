@@ -29,12 +29,9 @@ const Home = () => {
 		},
 	];
 	return (
-		<div className="p-10">
-			<section
-				id="profile"
-				className="h-screen flex justify-center mt-32 lg:mt-0 xl:mt-0"
-			>
-				<div className="raleway flex justify-center items-center h-2/3 lg:flex-row flex-col">
+		<div>
+			<section id="profile" className="h-screen flex justify-center">
+				<div className="raleway flex justify-center items-center h-screen w-full lg:flex-row flex-col">
 					<div className="flex max-w-[500px] flex-col gap-4 p-6">
 						<h1 className="font-raleway font-bold text-2xl">
 							Hello, <span className="block">My name is Max</span>
@@ -72,7 +69,7 @@ const Home = () => {
 				id="showcases"
 				className="raleway h-screen flex justify-center"
 			>
-				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3">
+				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3 px-6">
 					<div className="flex flex-col w-full py-8">
 						<h1 className="text-2xl font-bold">Showcases.</h1>
 						<p className="opacity-40 w-full md:w-1/2">
@@ -92,7 +89,7 @@ const Home = () => {
 				id="projects"
 				className="raleway h-screen flex justify-center"
 			>
-				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3">
+				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3 px-6">
 					<div className="flex flex-col w-full py-8">
 						<h1 className="text-2xl font-bold">Projects.</h1>
 						<p className="opacity-40 w-full md:w-1/2">
@@ -115,7 +112,7 @@ const Home = () => {
 				id="contact"
 				className="raleway h-screen flex justify-center"
 			>
-				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3">
+				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3 px-6">
 					<div className="flex flex-col w-full py-8 ">
 						<h1 className="text-2xl font-bold">Contact.</h1>
 						<p className="opacity-40 w-full md:w-1/2">
