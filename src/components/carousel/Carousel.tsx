@@ -34,7 +34,7 @@ const cardData = [
 		link: "https://play.google.com/store/apps/details?id=com.nunyvega.argentometro&pcampaignid=web_share",
 	},
 	{
-		title: "Administrtor sistem",
+		title: "Administrative system",
 		bgImage: "/SisFed.png",
 		stack1: "React",
 		stack2: "Next.js",
