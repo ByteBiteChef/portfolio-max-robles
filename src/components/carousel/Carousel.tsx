@@ -13,8 +13,7 @@ import CarouselCard from "../card/CarouselCard";
 const cardData = [
 	{
 		title: "Algos.es",
-		bgImage:
-			"https://plus.unsplash.com/premium_photo-1683865776032-07bf70b0add1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		bgImage: "/algos.png",
 		stack1: "React",
 		stack2: "Next.js",
 		stack3: "Tailwind CSS",
@@ -24,16 +23,15 @@ const cardData = [
 		link: "https://algos.es",
 	},
 	{
-		title: "Algos.es",
-		bgImage:
-			"https://plus.unsplash.com/premium_photo-1683865776032-07bf70b0add1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		stack1: "React",
-		stack2: "Next.js",
-		stack3: "Tailwind CSS",
-		stack4: "TypeScript",
+		title: "Argentometro",
+		bgImage: "/argentometro.png",
+		stack1: "React Native",
+		stack2: "",
+		stack3: "CSS",
+		stack4: "JavaScript",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar et consectetur quam integer sit blandit nulla. Metus magna erat pretium a, tincidunt vitae.",
-		link: "https://algos.es",
+		link: "https://play.google.com/store/apps/details?id=com.nunyvega.argentometro&pcampaignid=web_share",
 	},
 	{
 		title: "Algos.es",

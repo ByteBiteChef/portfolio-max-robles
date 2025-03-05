@@ -14,7 +14,7 @@ interface CardData {
 const Card = ({ data }: { data: CardData }) => {
 	return (
 		<div className="raleway flex flex-col gap-4 w-70">
-			<div className="relative h-45 overflow-hidden rounded-lg group">
+			<div className="relative h-45 overflow-hidden rounded-lg group border">
 				<div
 					className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
 					style={{ backgroundImage: `url(${data.bgImage})` }}

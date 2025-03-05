@@ -3,7 +3,7 @@ const NavContact = () => {
 		"hover:after:content-['•'] hover:after:absolute hover:after:left-[-14px] hover:after:top-1/2 hover:after:-translate-y-1/3 hover:after:animate-bounce hover:after:text-3xl";
 
 	return (
-		<div className="flex top-1/2 -translate-y-1/2 sticky z-20 mr-4 justify-end raleway opacity-50">
+		<div className="flex top-1/2 left-full w-12 -translate-y-1/2 sticky z-20 mr-4 justify-end raleway opacity-50">
 			<div className="flex flex-col gap-y-4">
 				<a
 					href="https://github.com/ByteBiteChef"
