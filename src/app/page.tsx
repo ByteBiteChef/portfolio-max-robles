@@ -75,7 +75,7 @@ const Home = () => {
 			>
 				<div className="flex flex-col items-center justify-center w-2/3">
 					<div className="flex flex-col w-full py-8 ">
-						<h1 className="text-2xl font-bold">Contact!</h1>
+						<h1 className="text-2xl font-bold">Contact.</h1>
 						<p className="opacity-40 w-1/2">
 							Feel free to reach out if you want a to build
 							something together, have a question, or just want to
