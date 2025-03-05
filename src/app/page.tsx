@@ -31,7 +31,7 @@ const Home = () => {
 	return (
 		<div>
 			<section id="profile" className="h-screen flex justify-center">
-				<div className="raleway flex justify-center items-center">
+				<div className="raleway flex justify-center items-center h-2/3">
 					<div className="flex max-w-[500px] flex-col gap-4 p-6">
 						<h1 className="font-raleway font-bold text-2xl">
 							Hello, <span className="block">My name is Max</span>
