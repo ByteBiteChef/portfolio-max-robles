@@ -31,22 +31,22 @@ const Navside = () => {
 	}, []);
 
 	return (
-		<div className="flex w-12 top-1/2 -translate-y-1/2 fixed z-50 ml-4">
+		<div className="flex w-12 top-1/2 -translate-y-1/2 fixed z-50 ml-12">
 			<div className="flex flex-col items-start">
 				<a
 					href="#profile"
 					className={`cursor-pointer border-b-2 hover:w-8 transition-all duration-300 h-4 mt-2 ${
 						activeSection === "profile"
 							? "w-9 border-black hover:w-9"
-							: "w-6 border-gray-400"
+							: "w-7 border-gray-400"
 					}`}
 				></a>
 				<a
 					href="#showcases"
 					className={`cursor-pointer border-b-2 hover:w-8 transition-all duration-300 h-4 mt-2 ${
 						activeSection === "showcases"
-							? "w-10 border-black hover:w-9"
-							: "w-6 border-gray-400"
+							? "w-9 border-black hover:w-9"
+							: "w-7 border-gray-400"
 					}`}
 				></a>
 				<a
@@ -54,7 +54,7 @@ const Navside = () => {
 					className={`cursor-pointer border-b-2 hover:w-8 transition-all duration-300 h-4 mt-2 ${
 						activeSection === "projects"
 							? "w-9 border-black hover:w-9"
-							: "w-6 border-gray-400"
+							: "w-7 border-gray-400"
 					}`}
 				></a>
 				<a
@@ -62,7 +62,7 @@ const Navside = () => {
 					className={`cursor-pointer border-b-2 hover:w-8 transition-all duration-300 h-4 mt-2 ${
 						activeSection === "contact"
 							? "w-9 border-black hover:w-9"
-							: "w-6  border-gray-400"
+							: "w-7  border-gray-400"
 					}`}
 				></a>
 			</div>
