@@ -29,7 +29,7 @@ const Home = () => {
 		},
 	];
 	return (
-		<div>
+		<div className="p-10">
 			<section
 				id="profile"
 				className="h-screen flex justify-center mt-32 lg:mt-0 xl:mt-0"
@@ -60,8 +60,8 @@ const Home = () => {
 						</a>
 					</div>
 					<div className="relative">
-						<div className="absolute top-30 left-30 w-120 h-120 bg-[#E8E6E6] -z-10 hidden lg:block"></div>
-						<div className="w-125 h-125 bg-gray-400 flex justify-center items-center relative z-10">
+						<div className="absolute top-30 left-30 w-120 h-120 bg-[#E8E6E6] hidden xl:block"></div>
+						<div className="w-80 h-80 sm:w-100 sm:h-100 md:w-125 md:h-125 lg:w-125 lg:h-125 xl:w-125 xl:h-125 bg-gray-400 flex justify-center items-center relative">
 							Profile image
 						</div>
 					</div>
@@ -72,10 +72,10 @@ const Home = () => {
 				id="showcases"
 				className="raleway h-screen flex justify-center"
 			>
-				<div className="flex flex-col items-center justify-center w-2/3">
+				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3">
 					<div className="flex flex-col w-full py-8">
 						<h1 className="text-2xl font-bold">Showcases.</h1>
-						<p className="opacity-40 w-1/2">
+						<p className="opacity-40 w-full md:w-1/2">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Pulvinar et consectetur quam integer sit
 							blandit nulla. Metus magna erat pretium a, tincidunt
@@ -92,17 +92,17 @@ const Home = () => {
 				id="projects"
 				className="raleway h-screen flex justify-center"
 			>
-				<div className="flex flex-col items-center justify-center w-2/3">
+				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3">
 					<div className="flex flex-col w-full py-8">
 						<h1 className="text-2xl font-bold">Projects.</h1>
-						<p className="opacity-40 w-1/2">
+						<p className="opacity-40 w-full md:w-1/2">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Pulvinar et consectetur quam integer sit
 							blandit nulla. Metus magna erat pretium a, tincidunt
 							vitae.
 						</p>
 					</div>
-					<div className="flex gap-4">
+					<div className="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-4">
 						{ghCard.map((ghCard) => (
 							<GhCard ghCard={ghCard} key={ghCard.title} />
 						))}
@@ -115,10 +115,10 @@ const Home = () => {
 				id="contact"
 				className="raleway h-screen flex justify-center"
 			>
-				<div className="flex flex-col items-center justify-center w-2/3">
+				<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3">
 					<div className="flex flex-col w-full py-8 ">
 						<h1 className="text-2xl font-bold">Contact.</h1>
-						<p className="opacity-40 w-1/2">
+						<p className="opacity-40 w-full md:w-1/2">
 							Feel free to reach out if you want a to build
 							something together, have a question, or just want to
 							connect.
