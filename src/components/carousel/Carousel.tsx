@@ -62,7 +62,10 @@ const CarouselComponent = () => {
 		<Carousel className="w-full items-center">
 			<CarouselContent>
 				{cardData.map((data, index) => (
-					<CarouselItem className="basis-1/4" key={index}>
+					<CarouselItem
+						className="sm:basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/3"
+						key={index}
+					>
 						<CarouselCard data={data} />
 					</CarouselItem>
 				))}
