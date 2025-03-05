@@ -157,6 +157,13 @@ body {
   body {
     @apply h-full overflow-y-scroll;
     scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   section {
