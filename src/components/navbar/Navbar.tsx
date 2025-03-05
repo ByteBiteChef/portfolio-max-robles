@@ -7,27 +7,28 @@ const Navbar = () => {
 	const [activeSection, setActiveSection] = useState("");
 
 	useEffect(() => {
-		const handleScroll = () => {
-			const sections = ["profile", "showcases", "projects", "contact"];
-			let currentSection = "";
-
-			for (const section of sections) {
-				const element = document.getElementById(section);
-				if (element) {
-					const rect = element.getBoundingClientRect();
-					if (rect.top <= 150 && rect.bottom >= 150) {
-						currentSection = section;
-						break;
-					}
-				}
-			}
-
-			setActiveSection(currentSection);
+		const sections = document.querySelectorAll("section[id]");
+		const observerOptions = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0.5,
 		};
 
-		window.addEventListener("scroll", handleScroll);
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const id = entry.target.getAttribute("id");
+					if (id) {
+						setActiveSection(id);
+					}
+				}
+			});
+		}, observerOptions);
+
+		sections.forEach((section) => observer.observe(section));
+
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			sections.forEach((section) => observer.unobserve(section));
 		};
 	}, []);
 

@@ -6,27 +6,34 @@ const Navside = () => {
 	const [activeSection, setActiveSection] = useState("");
 
 	useEffect(() => {
-		const handleScroll = () => {
-			const sections = ["profile", "showcases", "projects", "contact"];
-			let currentSection = "";
-
-			for (const section of sections) {
-				const element = document.getElementById(section);
-				if (element) {
-					const rect = element.getBoundingClientRect();
-					if (rect.top <= 150 && rect.bottom >= 150) {
-						currentSection = section;
-						break;
-					}
-				}
-			}
-
-			setActiveSection(currentSection);
+		const sections = document.querySelectorAll("section[id]");
+		// For better highlight logic, let's set an observer threshold,
+		// meaning the observer will trigger when the section is at least
+		// 50% in view (you can tweak this to your liking).
+		const observerOptions = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0.5, // 50% in view
 		};
 
-		window.addEventListener("scroll", handleScroll);
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				// If 50% of the section is in view, mark it active
+				if (entry.isIntersecting) {
+					const id = entry.target.getAttribute("id");
+					if (id) {
+						setActiveSection(id);
+					}
+				}
+			});
+		}, observerOptions);
+
+		// Observe each section
+		sections.forEach((section) => observer.observe(section));
+
+		// Cleanup
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			sections.forEach((section) => observer.unobserve(section));
 		};
 	}, []);
 
@@ -62,7 +69,7 @@ const Navside = () => {
 					className={`cursor-pointer border-b-2 hover:w-8 transition-all duration-300 h-4 mt-2 ${
 						activeSection === "contact"
 							? "w-9 border-black hover:w-9"
-							: "w-7  border-gray-400"
+							: "w-7 border-gray-400"
 					}`}
 				></a>
 			</div>

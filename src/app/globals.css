@@ -150,3 +150,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer base {
+
+  html,
+  body {
+    @apply h-full overflow-y-scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    @apply h-screen;
+    scroll-snap-align: start;
+  }
+}
