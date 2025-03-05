@@ -35,7 +35,7 @@ const Navbar = () => {
 	return (
 		<div className="raleway flex sticky top-0">
 			<div className="flex items-center justify-between w-full m-10">
-				<Link href="/" className="text-2xl roboto-slab">
+				<Link href="/" className="text-2xl hidden md:block roboto-slab">
 					Max
 					<br />
 					Robles.
