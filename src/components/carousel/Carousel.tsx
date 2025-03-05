@@ -46,16 +46,15 @@ const cardData = [
 		link: "https://algos.es",
 	},
 	{
-		title: "Algos.es",
-		bgImage:
-			"https://plus.unsplash.com/premium_photo-1683865776032-07bf70b0add1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		title: "AgroManager",
+		bgImage: "/agromanager.png",
 		stack1: "React",
 		stack2: "Next.js",
 		stack3: "Tailwind CSS",
 		stack4: "TypeScript",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar et consectetur quam integer sit blandit nulla. Metus magna erat pretium a, tincidunt vitae.",
-		link: "https://algos.es",
+		link: "https://agromanager.vercel.app/",
 	},
 ];
 
