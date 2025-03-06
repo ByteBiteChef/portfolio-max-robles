@@ -56,9 +56,9 @@ const Home = () => {
 							Get My Resume
 						</a>
 					</div>
-					<div className="relative">
+					<div className="relative isolate">
 						<div className="absolute top-30 left-30 w-120 h-120 bg-[#E8E6E6] hidden xl:block"></div>
-						<div className="w-80 h-80 sm:w-100 sm:h-100 md:w-125 md:h-125 lg:w-125 lg:h-125 xl:w-125 xl:h-125 bg-gray-400 flex justify-center items-center relative">
+						<div className="w-80 h-80 sm:w-100 md:w-125 lg:w-125 lg:h-125 xl:w-125 xl:h-125 bg-gray-400 flex justify-center items-center relative">
 							Profile image
 						</div>
 					</div>
