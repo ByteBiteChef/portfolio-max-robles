@@ -9,88 +9,38 @@ interface ContributionDay {
 
 const GitHubContributions = () => {
 	const [contributions, setContributions] = useState<ContributionDay[]>([]);
-	const [year, setYear] = useState(new Date().getFullYear()); // Default to current year
+	const [year, setYear] = useState(new Date().getFullYear());
 
 	useEffect(() => {
 		const fetchContributions = async () => {
-			const GITHUB_API_URL = "https://api.github.com/graphql";
-			const TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
-
-			// Define start and end date for the selected year
-			const from = `${year}-01-01T00:00:00Z`;
-			const to = `${year}-12-31T23:59:59Z`;
-
-			const query = `
-        query {
-          user(login: "ByteBiteChef") {
-            contributionsCollection(from: "${from}", to: "${to}") {
-              contributionCalendar {
-                weeks {
-                  contributionDays {
-                    contributionCount
-                    date
-                  }
-                }
-              }
-            }
-          }
-        }
-      `;
-
 			try {
-				const response = await fetch(GITHUB_API_URL, {
-					method: "POST",
-					headers: {
-						"Authorization": `Bearer ${TOKEN}`,
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify({ query }),
-				});
-
-				const { data } = await response.json();
-				const contributionDays =
-					data.user.contributionsCollection.contributionCalendar.weeks.flatMap(
-						(week: { contributionDays: ContributionDay[] }) =>
-							week.contributionDays
-					);
-
-				setContributions(contributionDays);
+				const response = await fetch(`/api/github?year=${year}`);
+				if (!response.ok) {
+					throw new Error("Failed to fetch contributions");
+				}
+				const data = await response.json();
+				setContributions(data);
 			} catch (error) {
 				console.error("Error fetching GitHub contributions:", error);
 			}
 		};
 
 		fetchContributions();
-	}, [year]); // Fetch data when `year` changes
+	}, [year]);
 
 	// Function to determine color intensity
 	const getColor = (count: number) => {
-		if (count === 0) return "bg-gray-200"; // No contributions
+		if (count === 0) return "bg-gray-200";
 		if (count < 5) return "bg-green-200";
 		if (count < 10) return "bg-green-400";
 		if (count < 20) return "bg-green-600";
-		return "bg-green-800"; // Most active
+		return "bg-green-800";
 	};
 
-	// Format data into a 7-day per row structure
 	const weeks: ContributionDay[][] = [];
 	for (let i = 0; i < contributions.length; i += 7) {
 		weeks.push(contributions.slice(i, i + 7));
 	}
-
-	// Extract first day of each month for labels
-	const monthLabels: { name: string; index: number }[] = [];
-	contributions.forEach((day, index) => {
-		const month = new Date(day.date).toLocaleString("default", {
-			month: "short",
-		});
-		if (
-			monthLabels.length === 0 ||
-			monthLabels[monthLabels.length - 1].name !== month
-		) {
-			monthLabels.push({ name: month, index });
-		}
-	});
 
 	const years = Array.from(
 		{ length: 3 },
@@ -106,21 +56,7 @@ const GitHubContributions = () => {
 			<div className="flex flex-col gap-4 w-full justify-between">
 				<div className="flex border p-1 rounded-md overflow-x-hidden md:overflow-x-auto custom-scrollbar">
 					<div>
-						<div className="flex text-xs font-medium text-gray-500 ml-10">
-							{monthLabels.map((month) => (
-								<div
-									key={month.name}
-									className="mr-6"
-									style={{
-										marginLeft: `${month.index * 0.25}px`,
-									}}
-								>
-									{month.name}
-								</div>
-							))}
-						</div>
-
-						<div className="flex gap-1  p-2">
+						<div className="flex gap-1 p-2">
 							{weeks.map((week, weekIndex) => (
 								<div
 									key={weekIndex}
