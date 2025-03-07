@@ -43,40 +43,40 @@ const Navbar = () => {
 				<div className="flex items-center gap-4">
 					<a
 						href="#profile"
-						className={`cursor-pointer hover:text-[#999999] ${
+						className={`cursor-pointer hover:text-gray-500 ${
 							activeSection === "profile"
 								? "border-b-2 border-[#A84E4F] opacity-100"
-								: "opacity-50"
+								: "text-[#999999]"
 						}`}
 					>
 						Profile
 					</a>
 					<a
 						href="#showcases"
-						className={`cursor-pointer hover:text-[#999999] ${
+						className={`cursor-pointer hover:text-gray-500 ${
 							activeSection === "showcases"
 								? "border-b-2 border-[#A84E4F] opacity-100"
-								: "opacity-50"
+								: "text-[#999999]"
 						}`}
 					>
 						Showcases
 					</a>
 					<a
 						href="#projects"
-						className={`cursor-pointer hover:text-[#999999] ${
+						className={`cursor-pointer hover:text-gray-500 ${
 							activeSection === "projects"
 								? "border-b-2 border-[#A84E4F] opacity-100"
-								: "opacity-50"
+								: "text-[#999999]"
 						}`}
 					>
 						Projects
 					</a>
 					<a
 						href="#contact"
-						className={`cursor-pointer hover:text-[#999999] ${
+						className={`cursor-pointer hover:text-gray-500 ${
 							activeSection === "contact"
 								? "border-b-2 border-[#A84E4F] opacity-100"
-								: "opacity-50"
+								: "text-[#999999]"
 						}`}
 					>
 						Contact
