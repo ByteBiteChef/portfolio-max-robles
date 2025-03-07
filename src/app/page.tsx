@@ -3,7 +3,7 @@ import ProfileSection from "../components/sections/ProfileSection";
 import ShowcasesSection from "../components/sections/ShowcasesSection";
 import ProjectsSection from "../components/sections/ProjectsSection";
 import ContactSection from "../components/sections/ContactSection";
-
+import NavButton from "../components/navbar/NavButton";
 const Home = () => {
 	return (
 		<>
@@ -12,6 +12,7 @@ const Home = () => {
 				id="profile"
 			>
 				<ProfileSection />
+				<NavButton />
 			</section>
 
 			<section
@@ -19,6 +20,7 @@ const Home = () => {
 				id="showcases"
 			>
 				<ShowcasesSection />
+				<NavButton />
 			</section>
 
 			<section
@@ -26,6 +28,7 @@ const Home = () => {
 				id="projects"
 			>
 				<ProjectsSection />
+				<NavButton />
 			</section>
 
 			<section

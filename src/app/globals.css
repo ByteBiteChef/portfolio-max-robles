@@ -191,3 +191,13 @@ body {
     background: #555;
   }
 }
+
+.vertical-line {
+  display: block;
+  width: 1px;
+  /* Adjust thickness */
+  height: 50px;
+  /* Adjust height */
+  background-color: black;
+  /* Adjust color */
+}
