@@ -23,15 +23,15 @@ const Card = ({ data }: { data: CardData }) => {
 				<div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
 
 				<div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-					<p className="text-lg">{data.stack1}</p>
-					<p className="text-lg">{data.stack2}</p>
-					<p className="text-lg">{data.stack3}</p>
-					<p className="text-lg">{data.stack4}</p>
+					<p className="text-lg underline">{data.stack1}</p>
+					<p className="text-lg underline">{data.stack2}</p>
+					<p className="text-lg underline">{data.stack3}</p>
+					<p className="text-lg underline">{data.stack4}</p>
 				</div>
 			</div>
 			<div>
 				<h2 className="text-lg font-bold my-2">{data.title}</h2>
-				<p className="text-sm">{data.description}</p>
+				<p className="text-sm text-[#999999]">{data.description}</p>
 			</div>
 			<a href={data.link} className="text-md">
 				View project

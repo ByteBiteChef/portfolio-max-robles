@@ -21,7 +21,7 @@ const GhCard = ({ ghCard }: GhCardProps) => {
 					</a>
 				</div>
 			</div>
-			<p className="opacity-40">{`${ghCard.description}`}</p>
+			<p className="text-[#999999]">{`${ghCard.description}`}</p>
 			<div className="flex items-center gap-2">
 				<div
 					className={`w-2 h-2  rounded-full ${

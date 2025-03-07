@@ -7,7 +7,7 @@ const ContactSection = () => {
 		<div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-2/3 xl:w-2/3 px-6">
 			<div className="flex flex-col w-full py-8 ">
 				<h1 className="text-2xl font-bold">Contact.</h1>
-				<p className="opacity-40 w-full md:w-1/2">
+				<p className="text-[#999999] w-full md:w-1/2">
 					Feel free to reach out if you want a to build something
 					together, have a question, or just want to connect.
 				</p>

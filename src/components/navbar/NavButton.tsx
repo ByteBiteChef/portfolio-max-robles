@@ -40,7 +40,7 @@ const NavButton = () => {
 			: sections[0];
 
 	return (
-		<div className="absolute bottom-0 left-1/2  flex-col items-center justify-center hidden sm:flex">
+		<div className="absolute bottom-0 left-1/2  flex-col items-center justify-center hidden sm:flex hover:text-[#999999]">
 			{activeSection === "contact" ? (
 				<></>
 			) : (

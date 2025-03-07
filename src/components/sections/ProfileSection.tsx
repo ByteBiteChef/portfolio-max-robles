@@ -8,15 +8,19 @@ const ProfileSection = () => {
 					Hello, <span className="block">My name is Max</span>
 				</h1>
 
-				<p className="opacity-40">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Pulvinar et consectetur quam integer sit blandit nulla.
-					Metus magna erat pretium a, tincidunt vitae.
+				<p className="text-[#999999]">
+					I&apos;ve been a software developer for almost two years
+					now. Before that, I worked for 15 years as a chef de
+					cuisine, a profession that taught me leadership, teamwork,
+					and problem-solving, along with great friendships and plenty
+					of stories.
 				</p>
-				<p className="opacity-40">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Pulvinar et consectetur quam integer sit blandit nulla.
-					Metus magna erat pretium a, tincidunt vitae.
+				<p className="text-[#999999]">
+					My main focus has been learning React, TypeScript, Next.js,
+					and other technologies. I love building things from scratch,
+					which is something I find exciting about both cooking and
+					programming. Another similarity is finding simple solutions
+					to problems that aren&apos;t always so simple.
 				</p>
 				<a
 					className="cursor-pointer font-raleway font-semibold text-lg underline"
