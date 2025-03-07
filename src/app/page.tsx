@@ -12,7 +12,6 @@ const Home = () => {
 				id="profile"
 			>
 				<ProfileSection />
-				<NavButton />
 			</section>
 
 			<section
@@ -20,7 +19,6 @@ const Home = () => {
 				id="showcases"
 			>
 				<ShowcasesSection />
-				<NavButton />
 			</section>
 
 			<section
@@ -28,7 +26,6 @@ const Home = () => {
 				id="projects"
 			>
 				<ProjectsSection />
-				<NavButton />
 			</section>
 
 			<section
@@ -37,6 +34,7 @@ const Home = () => {
 			>
 				<ContactSection />
 			</section>
+			<NavButton />
 		</>
 	);
 };

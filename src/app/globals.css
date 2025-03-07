@@ -195,9 +195,6 @@ body {
 .vertical-line {
   display: block;
   width: 1px;
-  /* Adjust thickness */
-  height: 50px;
-  /* Adjust height */
+  height: 25px;
   background-color: black;
-  /* Adjust color */
 }

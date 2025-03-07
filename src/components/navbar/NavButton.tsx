@@ -40,12 +40,19 @@ const NavButton = () => {
 			: sections[0];
 
 	return (
-		<>
-			<a href={`#${nextSection}`} className="raleway uppercase">
-				{nextSection.charAt(0).toUpperCase() + nextSection.slice(1)}
-			</a>
-			<div className="vertical-line"></div>
-		</>
+		<div className="absolute bottom-0 left-1/2 flex flex-col items-center justify-center">
+			{activeSection === "contact" ? (
+				<></>
+			) : (
+				<>
+					<a href={`#${nextSection}`} className="raleway uppercase">
+						{nextSection.charAt(0).toUpperCase() +
+							nextSection.slice(1)}
+					</a>
+					<div className="vertical-line"></div>
+				</>
+			)}
+		</div>
 	);
 };
 
