@@ -1,5 +1,5 @@
 import ScrollDown from "../scrollsown";
-
+import Image from "next/image";
 const ProfileSection = () => {
 	return (
 		<div className="raleway flex justify-center items-center h-screen w-full lg:flex-row flex-col mt-15">
@@ -32,8 +32,8 @@ const ProfileSection = () => {
 			</div>
 			<div className="relative isolate">
 				<div className="absolute top-30 left-30 w-120 h-120 bg-[#E8E6E6] hidden xl:block"></div>
-				<div className="w-80 h-80 sm:w-100 md:w-125 lg:w-125 lg:h-125 xl:w-125 xl:h-125 bg-gray-400 flex justify-center items-center relative">
-					Profile image
+				<div className="w-80 h-80 lg:w-125 lg:h-125 xl:w-125 xl:h-125 bg-gray-400 flex justify-center items-center relative">
+					<Image src="/profile-photo.jpg" alt="Profile" fill />
 				</div>
 			</div>
 			<ScrollDown />
