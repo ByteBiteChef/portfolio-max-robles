@@ -7,9 +7,10 @@ const ShowcasesSection = () => {
 			<div className="flex flex-col w-full py-8">
 				<h1 className="text-2xl font-bold">Showcases.</h1>
 				<p className="text-[#999999] w-full md:w-1/2">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Pulvinar et consectetur quam integer sit blandit nulla.
-					Metus magna erat pretium a, tincidunt vitae.
+					A selection of projects I&apos;ve worked on, from personal
+					builds to collaborations. Some are part of my professional
+					experience, while others, like my full-stack bootcamp final
+					project, were part of my learning process.
 				</p>
 			</div>
 			<div className="flex flex-col w-full">
