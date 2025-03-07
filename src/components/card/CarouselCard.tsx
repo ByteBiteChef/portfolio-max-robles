@@ -29,13 +29,15 @@ const Card = ({ data }: { data: CardData }) => {
 					<p className="text-lg underline">{data.stack4}</p>
 				</div>
 			</div>
-			<div>
-				<h2 className="text-lg font-bold my-2">{data.title}</h2>
-				<p className="text-sm text-[#999999]">{data.description}</p>
+			<div className="flex flex-col justify-between gap-2 p-2 min-h-[210px]">
+				<div>
+					<h2 className="text-lg font-bold my-2">{data.title}</h2>
+					<p className="text-sm text-[#999999]">{data.description}</p>
+				</div>
+				<a href={data.link} className="text-md">
+					View project
+				</a>
 			</div>
-			<a href={data.link} className="text-md">
-				View project
-			</a>
 		</div>
 	);
 };

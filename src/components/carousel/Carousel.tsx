@@ -19,7 +19,7 @@ const cardData = [
 		stack3: "Tailwind CSS",
 		stack4: "TypeScript",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar et consectetur quam integer sit blandit nulla. Metus magna erat pretium a, tincidunt vitae.",
+			"Algos.es is a web platform to learn algorithms and data structures in Spanish. It offers selected exercises to help users prepare for technical interviews, starting from warm-up challenges to more difficult levels. It also includes a built-in code editor, allowing users to practice and test their solutions directly on the site.",
 		link: "https://algos.es",
 	},
 	{
@@ -30,7 +30,7 @@ const cardData = [
 		stack3: "CSS",
 		stack4: "JavaScript",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar et consectetur quam integer sit blandit nulla. Metus magna erat pretium a, tincidunt vitae.",
+			"Argentometro is an engaging and interactive quiz game. This app offers a variety of questions across multiple categories of Argentinian culture, challenging players with timed questions, levels, and rewards.",
 		link: "https://play.google.com/store/apps/details?id=com.nunyvega.argentometro&pcampaignid=web_share",
 	},
 	{
