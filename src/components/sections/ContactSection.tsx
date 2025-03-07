@@ -13,7 +13,7 @@ const ContactSection = () => {
 				</p>
 				<div className="flex flex-col w-full py-2">
 					<a
-						className="underline font-raleway font-semibold text-lg"
+						className="underline font-raleway font-semibold text-lg w-fit"
 						href="mailto:maxirobles1234@gmail.com"
 					>
 						maxirobles1234@gmail.com

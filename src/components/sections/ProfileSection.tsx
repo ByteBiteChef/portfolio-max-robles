@@ -22,7 +22,7 @@ const ProfileSection = () => {
 					to problems that aren&apos;t always so simple.
 				</p>
 				<a
-					className="cursor-pointer font-raleway font-semibold text-lg underline"
+					className="cursor-pointer font-raleway font-semibold text-lg underline w-fit"
 					target="_blank"
 					rel="noopener noreferrer"
 					href="https://standardresume.co/r/SpAGtFrFekhSH_J73gpfF"
