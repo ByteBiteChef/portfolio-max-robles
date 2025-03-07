@@ -8,7 +8,7 @@ const NavContact = () => {
 	const navItems = [
 		{ href: "https://github.com/ByteBiteChef", label: "Git" },
 		{ href: "https://www.linkedin.com/in/max-robles-dev/", label: "In" },
-		{ href: "mailto:maxirobles123@gmail.com", label: "Mail" },
+		{ href: "mailto:maxirobles1234@gmail.com", label: "Mail" },
 	];
 
 	return (

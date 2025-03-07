@@ -42,6 +42,19 @@ const GitHubContributions = () => {
 		weeks.push(contributions.slice(i, i + 7));
 	}
 
+	const monthLabels: { name: string; index: number }[] = [];
+	contributions.forEach((day, index) => {
+		const month = new Date(day.date).toLocaleString("default", {
+			month: "short",
+		});
+		if (
+			monthLabels.length === 0 ||
+			monthLabels[monthLabels.length - 1].name !== month
+		) {
+			monthLabels.push({ name: month, index });
+		}
+	});
+
 	const years = Array.from(
 		{ length: 3 },
 		(_, i) => new Date().getFullYear() - i
@@ -53,9 +66,22 @@ const GitHubContributions = () => {
 				My GitHub Contributions.
 			</h2>
 
-			<div className="flex flex-col gap-4 w-full justify-between">
+			<div className="flex gap-4 w-full justify-between">
 				<div className="flex border p-1 rounded-md overflow-x-hidden md:overflow-x-auto custom-scrollbar">
 					<div>
+						<div className="flex text-xs font-medium text-gray-500 ml-10">
+							{monthLabels.map((month) => (
+								<div
+									key={month.name}
+									className="mr-6"
+									style={{
+										marginLeft: `${month.index * 0.25}px`,
+									}}
+								>
+									{month.name}
+								</div>
+							))}
+						</div>
 						<div className="flex gap-1 p-2">
 							{weeks.map((week, weekIndex) => (
 								<div
@@ -75,21 +101,21 @@ const GitHubContributions = () => {
 							))}
 						</div>
 					</div>
-					<div className="flex flex-col p-2 gap-2 text-sm">
-						{years.map((yr) => (
-							<button
-								key={yr}
-								onClick={() => setYear(yr)}
-								className={`h-8 w-32 ${
-									year === yr
-										? "bg-blue-500 text-white rounded-sm"
-										: ""
-								}`}
-							>
-								{yr}
-							</button>
-						))}
-					</div>
+				</div>
+				<div className="flex flex-col p-2 gap-2 text-sm">
+					{years.map((yr) => (
+						<button
+							key={yr}
+							onClick={() => setYear(yr)}
+							className={`h-8 w-32 ${
+								year === yr
+									? "bg-blue-500 text-white rounded-sm"
+									: ""
+							}`}
+						>
+							{yr}
+						</button>
+					))}
 				</div>
 			</div>
 		</div>

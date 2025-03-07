@@ -8,15 +8,15 @@ const ContactSection = () => {
 			<div className="flex flex-col w-full py-8 ">
 				<h1 className="text-2xl font-bold">Contact.</h1>
 				<p className="text-[#999999] w-full md:w-1/2">
-					Feel free to reach out if you want a to build something
+					Feel free to reach out if you want to build something
 					together, have a question, or just want to connect.
 				</p>
 				<div className="flex flex-col w-full py-2">
 					<a
 						className="underline font-raleway font-semibold text-lg"
-						href="mailto:maxirobles123@gmail.com"
+						href="mailto:maxirobles1234@gmail.com"
 					>
-						maxirobles123@gmail.com
+						maxirobles1234@gmail.com
 					</a>
 					<div className="flex flex-row gap-2 mt-4">
 						<a
