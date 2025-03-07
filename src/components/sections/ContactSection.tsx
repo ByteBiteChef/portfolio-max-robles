@@ -19,10 +19,18 @@ const ContactSection = () => {
 						maxirobles123@gmail.com
 					</a>
 					<div className="flex flex-row gap-2 mt-4">
-						<a href="https://github.com/ByteBiteChef">
+						<a
+							href="https://github.com/ByteBiteChef"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<IoLogoGithub className="text-xl" />
 						</a>
-						<a href="https://www.linkedin.com/in/max-robles-dev/">
+						<a
+							href="https://www.linkedin.com/in/max-robles-dev/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<FaLinkedinIn className="text-xl" />
 						</a>
 					</div>

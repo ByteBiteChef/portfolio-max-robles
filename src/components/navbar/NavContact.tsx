@@ -7,12 +7,16 @@ const NavContact = () => {
 			<div className="flex flex-col gap-y-4">
 				<a
 					href="https://github.com/ByteBiteChef"
+					target="_blank"
+					rel="noopener noreferrer"
 					className={`${hoverClass} relative`}
 				>
 					Git
 				</a>
 				<a
 					href="https://www.linkedin.com/in/max-robles-dev/"
+					target="_blank"
+					rel="noopener noreferrer"
 					className={`${hoverClass} relative`}
 				>
 					In
