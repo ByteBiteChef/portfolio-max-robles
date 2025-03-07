@@ -24,6 +24,8 @@ const ProfileSection = () => {
 				</p>
 				<a
 					className="cursor-pointer font-raleway font-semibold text-lg underline"
+					target="_blank"
+					rel="noopener noreferrer"
 					href="https://standardresume.co/r/SpAGtFrFekhSH_J73gpfF"
 				>
 					Get My Resume
