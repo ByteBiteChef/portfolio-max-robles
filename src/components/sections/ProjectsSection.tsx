@@ -5,25 +5,25 @@ import GitHubContributions from "../githubContributions/GitHubContributions";
 const ProjectsSection = () => {
 	const ghCard = [
 		{
-			title: "algos.es",
-			link: "https://github.com/ByteBiteChef/algos.es",
-			description:
-				"A website to learn algorithms and data structures in Spanish.",
-			language: "TypeScript",
-		},
-		{
-			title: "sisFed",
-			link: "https://github.com/ByteBiteChef/sisFed",
-			description:
-				"A web app to administrate Voleyball Tucuman's Federation league.",
-			language: "TypeScript",
-		},
-		{
 			title: "gymTracker",
 			link: "https://github.com/ByteBiteChef/gymTrack",
 			description:
 				"A PWA to track your gym progress, a weekend hackaton project.",
 			language: "TypeScript",
+		},
+		{
+			title: "e-commerce-henry",
+			link: "https://github.com/ByteBiteChef/e-commerce-henry",
+			description:
+				"A full-stack e-commerce app, a project for my bootcamp.",
+			language: "TypeScript",
+		},
+		{
+			title: "first-projects",
+			link: "https://github.com/ByteBiteChef/first-projects",
+			description:
+				"A collection of my first projects, a way to show my progress.",
+			language: "JavaScript",
 		},
 	];
 	return (
@@ -31,9 +31,9 @@ const ProjectsSection = () => {
 			<div className="flex flex-col w-full py-8">
 				<h1 className="text-2xl font-bold">Projects.</h1>
 				<p className="text-[#999999] w-full md:w-1/2">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Pulvinar et consectetur quam integer sit blandit nulla.
-					Metus magna erat pretium a, tincidunt vitae.
+					Here are some projects I built during my full-stack training
+					and hackathons, along with my GitHub activity. If
+					you&apos;re curious, feel free to check out the code.
 				</p>
 			</div>
 			<div className="flex flex-col lg:flex-row xl:flex-row gap-4">

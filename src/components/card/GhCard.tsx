@@ -29,7 +29,7 @@ const GhCard = ({ ghCard }: GhCardProps) => {
 							? "bg-blue-500"
 							: ghCard.language === "Python"
 							? "bg-yellow-500"
-							: ghCard.language === "Javascript"
+							: ghCard.language === "JavaScript"
 							? "bg-yellow-500"
 							: ghCard.language === "HTML"
 							? "bg-red-500"
