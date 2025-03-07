@@ -41,7 +41,7 @@ const cardData = [
 		stack3: "Tailwind CSS",
 		stack4: "TypeScript",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar et consectetur quam integer sit blandit nulla. Metus magna erat pretium a, tincidunt vitae.",
+			"A management system designed for the Volleyball Federation of Tucumán, Argentina. This ongoing project aims to streamline the administration of federated members, including players, referees, and club officials, improving organization and efficiency.",
 		link: "https://sis-fed.vercel.app/",
 	},
 	{
@@ -52,7 +52,7 @@ const cardData = [
 		stack3: "Tailwind CSS",
 		stack4: "TypeScript",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar et consectetur quam integer sit blandit nulla. Metus magna erat pretium a, tincidunt vitae.",
+			"Agromanager is a final bootcamp project designed to manage agricultural plots. It helps organize tasks, apply inputs, and track inventory, all in one platform to improve productivity",
 		link: "https://agromanager.vercel.app/",
 	},
 ];

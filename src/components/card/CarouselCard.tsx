@@ -34,7 +34,12 @@ const Card = ({ data }: { data: CardData }) => {
 					<h2 className="text-lg font-bold my-2">{data.title}</h2>
 					<p className="text-sm text-[#999999]">{data.description}</p>
 				</div>
-				<a href={data.link} className="text-md">
+				<a
+					href={data.link}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="text-md"
+				>
 					View project
 				</a>
 			</div>
