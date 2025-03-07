@@ -1,3 +1,5 @@
+import ScrollDown from "../scrollsown";
+
 const ProfileSection = () => {
 	return (
 		<div className="raleway flex justify-center items-center h-screen w-full lg:flex-row flex-col">
@@ -29,6 +31,7 @@ const ProfileSection = () => {
 					Profile image
 				</div>
 			</div>
+			<ScrollDown />
 		</div>
 	);
 };

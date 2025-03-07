@@ -198,3 +198,16 @@ body {
   height: 25px;
   background-color: black;
 }
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+}
+
+.vertical2-line {
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: black;
+}
