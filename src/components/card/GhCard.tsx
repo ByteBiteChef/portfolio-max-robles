@@ -15,6 +15,8 @@ const GhCard = ({ ghCard }: GhCardProps) => {
 					{repoIcon}
 					<a
 						className="underline text-blue-500 font-semibold"
+						target="_blank"
+						rel="noopener noreferrer"
 						href={`${ghCard.link}`}
 					>
 						{`${ghCard.title}`}

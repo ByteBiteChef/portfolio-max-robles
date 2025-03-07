@@ -30,7 +30,7 @@ const ProjectsSection = () => {
 		<div className="flex flex-col items-center justify-center h-screen w-full md:w-2/3 lg:w-2/3 xl:w-2/3 px-6">
 			<div className="flex flex-col w-full py-8">
 				<h1 className="text-2xl font-bold">Projects.</h1>
-				<p className="text-[#999999] w-full md:w-1/2">
+				<p className="text-[#999999] w-full lg:w-1/2 ">
 					Here are some projects I built during my full-stack training
 					and hackathons, along with my GitHub activity. If
 					you&apos;re curious, feel free to check out the code.
