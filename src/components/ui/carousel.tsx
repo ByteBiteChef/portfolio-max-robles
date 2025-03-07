@@ -26,8 +26,11 @@ type CarouselContextProps = {
 	api: ReturnType<typeof useEmblaCarousel>[1];
 	scrollPrev: () => void;
 	scrollNext: () => void;
+	scrollTo: (index: number) => void;
 	canScrollPrev: boolean;
 	canScrollNext: boolean;
+	selectedIndex: number;
+	slideCount: number;
 } & CarouselProps;
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);
@@ -60,11 +63,15 @@ function Carousel({
 	);
 	const [canScrollPrev, setCanScrollPrev] = React.useState(false);
 	const [canScrollNext, setCanScrollNext] = React.useState(false);
+	const [selectedIndex, setSelectedIndex] = React.useState(0);
+	const [slideCount, setSlideCount] = React.useState(0);
 
 	const onSelect = React.useCallback((api: CarouselApi) => {
 		if (!api) return;
 		setCanScrollPrev(api.canScrollPrev());
 		setCanScrollNext(api.canScrollNext());
+		setSelectedIndex(api.selectedScrollSnap());
+		setSlideCount(api.scrollSnapList().length);
 	}, []);
 
 	const scrollPrev = React.useCallback(() => {
@@ -74,6 +81,13 @@ function Carousel({
 	const scrollNext = React.useCallback(() => {
 		api?.scrollNext();
 	}, [api]);
+
+	const scrollTo = React.useCallback(
+		(index: number) => {
+			api?.scrollTo(index);
+		},
+		[api]
+	);
 
 	const handleKeyDown = React.useCallback(
 		(event: React.KeyboardEvent<HTMLDivElement>) => {
@@ -108,15 +122,18 @@ function Carousel({
 		<CarouselContext.Provider
 			value={{
 				carouselRef,
-				api: api,
+				api,
 				opts,
 				orientation:
 					orientation ||
 					(opts?.axis === "y" ? "vertical" : "horizontal"),
 				scrollPrev,
 				scrollNext,
+				scrollTo,
 				canScrollPrev,
 				canScrollNext,
+				selectedIndex,
+				slideCount,
 			}}
 		>
 			<div
@@ -232,6 +249,27 @@ function CarouselNext({
 	);
 }
 
+function CarouselDots({ className }: { className?: string }) {
+	const { scrollTo, selectedIndex, slideCount } = useCarousel();
+
+	return (
+		<div className={cn("flex justify-center gap-2 mt-4", className)}>
+			{Array.from({ length: slideCount }).map((_, index) => (
+				<button
+					key={index}
+					className={cn(
+						"w-2 h-2 rounded-full bg-gray-400 transition-all",
+						selectedIndex === index
+							? "bg-primary w-2 h-2"
+							: "bg-gray-400"
+					)}
+					onClick={() => scrollTo(index)}
+				/>
+			))}
+		</div>
+	);
+}
+
 export {
 	type CarouselApi,
 	Carousel,
@@ -239,4 +277,5 @@ export {
 	CarouselItem,
 	CarouselPrevious,
 	CarouselNext,
+	CarouselDots,
 };

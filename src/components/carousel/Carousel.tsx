@@ -4,6 +4,7 @@ import React from "react";
 import {
 	Carousel,
 	CarouselContent,
+	CarouselDots,
 	CarouselItem,
 	CarouselNext,
 	CarouselPrevious,
@@ -72,6 +73,7 @@ const CarouselComponent = () => {
 			</CarouselContent>
 			<CarouselPrevious />
 			<CarouselNext />
+			<CarouselDots />
 		</Carousel>
 	);
 };
