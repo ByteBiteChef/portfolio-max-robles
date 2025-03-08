@@ -156,7 +156,7 @@ body {
   html,
   body {
     @apply h-full overflow-y-scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
@@ -167,8 +167,17 @@ body {
   }
 
   section {
-    @apply h-screen;
+    height: 100vh;
     scroll-snap-align: start;
+  }
+
+  /* Enable scroll-snapping for screens 768px and larger */
+  @media (min-width: 768px) {
+
+    html,
+    body {
+      scroll-snap-type: y mandatory;
+    }
   }
 
 }
