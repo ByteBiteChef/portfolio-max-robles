@@ -11,7 +11,7 @@ interface CardData {
 const Card = ({ data }: { data: CardData }) => {
 	return (
 		<div className="raleway flex flex-col gap-4 w-full">
-			<div className="relative min-h-45 max-h-42 overflow-hidden border rounded-lg group">
+			<div className="relative min-h-45 max-h-42 border rounded-lg group">
 				<div
 					className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
 					style={{ backgroundImage: `url(${data.bgImage})` }}
@@ -36,9 +36,9 @@ const Card = ({ data }: { data: CardData }) => {
 					href={data.link}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-md"
+					className="text-md w-32"
 				>
-					View project
+					VIEW PROJECT
 				</a>
 			</div>
 		</div>
