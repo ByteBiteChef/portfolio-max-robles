@@ -33,7 +33,7 @@ const ProfileSection = () => {
 						Get My Resume
 					</a>
 				</div>
-				<div className="flex justify-end items-end w-full md:w-auto lg:w-auto xl:w-auto">
+				<div className="flex justify-end items-end w-full md:w-auto lg:w-auto xl:w-auto mt-10">
 					<div className="flex flex-col justify-end items-end w-full">
 						<Image
 							src="/profile-photo1.jpg"
