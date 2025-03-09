@@ -36,11 +36,11 @@ const ProfileSection = () => {
 				<div className="flex justify-end items-end w-full md:w-auto lg:w-auto xl:w-auto">
 					<div className="flex flex-col justify-end items-end w-full">
 						<Image
-							src="/profile-photo.jpg"
+							src="/profile-photo1.jpg"
 							alt="Profile"
 							width={500}
 							height={500}
-							className="w-full h-full md:px-0 lg:px-0 xl:px-0 md:w-80 md:h-80 lg:w-120 lg:h-120 xl:w-120 xl:h-120"
+							className="w-80 h-80 md:px-0 lg:px-0 xl:px-0 md:w-80 md:h-80 lg:w-120 lg:h-120 xl:w-120 xl:h-120 object-cover"
 						/>
 						<div className=" w-105 h-16 bg-[#E8E6E6] hidden lg:block"></div>
 					</div>
