@@ -27,7 +27,7 @@ const ProjectsSection = () => {
 		},
 	];
 	return (
-		<div className="flex flex-col items-center justify-center h-screen w-full md:w-2/3 lg:w-2/3 xl:w-2/3 p-6 mt-10 md:mt-0 lg:mt-0 xl:mt-0">
+		<div className="flex flex-col items-center justify-center h-screen w-full md:w-2/3 lg:w-2/3 xl:w-2/3 p-6">
 			<div className="flex flex-col w-full py-8">
 				<h1 className="text-2xl font-bold">Projects.</h1>
 				<p className="text-[#999999] w-full lg:w-1/2 ">

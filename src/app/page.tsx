@@ -7,34 +7,44 @@ import NavButton from "../components/navbar/NavButton";
 const Home = () => {
 	return (
 		<>
-			<section
-				className="flex flex-col items-center justify-center"
-				id="profile"
-			>
+			<div className="hidden md:block lg:block xl:block">
+				<section
+					className="flex flex-col items-center justify-center"
+					id="profile"
+				>
+					<ProfileSection />
+				</section>
+
+				<section
+					className="flex flex-col items-center justify-center"
+					id="showcases"
+				>
+					<ShowcasesSection />
+				</section>
+
+				<section
+					className="flex flex-col items-center justify-center"
+					id="projects"
+				>
+					<ProjectsSection />
+				</section>
+
+				<section
+					className="flex flex-col items-center justify-center"
+					id="contact"
+				>
+					<ContactSection />
+				</section>
+				<NavButton />
+			</div>
+			<div className="md:hidden ">
 				<ProfileSection />
-			</section>
-
-			<section
-				className="flex flex-col items-center justify-center"
-				id="showcases"
-			>
 				<ShowcasesSection />
-			</section>
-
-			<section
-				className="flex flex-col items-center justify-center"
-				id="projects"
-			>
 				<ProjectsSection />
-			</section>
-
-			<section
-				className="flex flex-col items-center justify-center"
-				id="contact"
-			>
-				<ContactSection />
-			</section>
-			<NavButton />
+				<div className="mt-10">
+					<ContactSection />
+				</div>
+			</div>
 		</>
 	);
 };
