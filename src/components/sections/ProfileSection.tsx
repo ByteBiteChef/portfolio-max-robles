@@ -2,7 +2,7 @@ import ScrollDown from "../scrollsown";
 import Image from "next/image";
 const ProfileSection = () => {
 	return (
-		<div className="raleway flex justify-center items-center h-screen w-full p-6">
+		<div className="raleway flex justify-center items-center h-screen w-full p-6 mt-10 md:mt-0 lg:mt-0 xl:mt-0">
 			<div className="flex flex-col md:flex-row lg:flex-row w-full h-full justify-center items-center">
 				<div className="flex flex-col gap-4 max-w-[500px]">
 					<h1 className="font-bold text-2xl">
