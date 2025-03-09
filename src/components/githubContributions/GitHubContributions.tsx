@@ -61,13 +61,13 @@ const GitHubContributions = () => {
 	);
 
 	return (
-		<div className="flex-col w-full mt-10 hidden xl:block">
+		<div className="flex-col w-full">
 			<h2 className="text-xl font-bold mb-4 font-raleway">
 				My GitHub Contributions.
 			</h2>
 
-			<div className="flex gap-4 w-full justify-between">
-				<div className="flex border p-1 rounded-md overflow-x-hidden md:overflow-x-auto custom-scrollbar">
+			<div className="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-4 w-full justify-center">
+				<div className="flex border p-1 rounded-md overflow-x-auto custom-scrollbar">
 					<div>
 						<div className="flex text-xs font-medium text-gray-500 ml-10">
 							{monthLabels.map((month) => (
@@ -102,7 +102,7 @@ const GitHubContributions = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col p-2 gap-2 text-sm">
+				<div className="flex md:flex-col lg:flex-col xl:flex-col p-2 gap-2 text-sm">
 					{years.map((yr) => (
 						<button
 							key={yr}

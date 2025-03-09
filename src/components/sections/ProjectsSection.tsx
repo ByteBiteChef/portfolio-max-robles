@@ -36,7 +36,7 @@ const ProjectsSection = () => {
 					you&apos;re curious, feel free to check out the code.
 				</p>
 			</div>
-			<div className="flex flex-col lg:flex-row xl:flex-row gap-4">
+			<div className="flex flex-col lg:flex-row xl:flex-row gap-4 mb-6">
 				{ghCard.map((ghCard) => (
 					<GhCard ghCard={ghCard} key={ghCard.title} />
 				))}
