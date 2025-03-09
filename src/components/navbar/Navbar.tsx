@@ -136,6 +136,7 @@ const Navbar = () => {
 						<div className="flex flex-col items-center justify-center h-full gap-4 text-2xl">
 							<a
 								href="#profile"
+								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "profile"
 										? "border-b-2 border-[#A84E4F] opacity-100"
@@ -146,6 +147,7 @@ const Navbar = () => {
 							</a>
 							<a
 								href="#showcases"
+								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "showcases"
 										? "border-b-2 border-[#A84E4F] opacity-100"
@@ -156,6 +158,7 @@ const Navbar = () => {
 							</a>
 							<a
 								href="#projects"
+								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "projects"
 										? "border-b-2 border-[#A84E4F] opacity-100"
@@ -166,6 +169,7 @@ const Navbar = () => {
 							</a>
 							<a
 								href="#contact"
+								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "contact"
 										? "border-b-2 border-[#A84E4F] opacity-100"
