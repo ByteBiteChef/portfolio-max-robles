@@ -40,7 +40,7 @@ const NavButton = () => {
 			: sections[0];
 
 	return (
-		<div className="absolute bottom-0 left-1/2  flex-col items-center justify-center hidden sm:flex hover:text-[#999999]">
+		<div className="absolute bottom-0 left-1/2 min-w-48 flex-col items-center justify-center hidden sm:flex hover:text-[#999999]">
 			{activeSection === "contact" ? (
 				<></>
 			) : (
@@ -49,7 +49,7 @@ const NavButton = () => {
 						{nextSection.charAt(0).toUpperCase() +
 							nextSection.slice(1)}
 					</a>
-					<div className="vertical-line"></div>
+					<div className="vertical-line hover:bg-[#999999]"></div>
 				</>
 			)}
 		</div>
