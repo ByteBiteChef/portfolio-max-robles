@@ -133,48 +133,32 @@ const Navbar = () => {
 								</svg>
 							</button>
 						</div>
-						<div className="flex flex-col items-center justify-center h-full gap-4 text-2xl">
+						<div className="flex flex-col items-center justify-center h-full gap-8 text-2xl">
 							<a
 								href="#MobileProfile"
 								onClick={handleModal}
-								className={`cursor-pointer hover:text-gray-500 ${
-									activeSection === "profile"
-										? "border-b-2 border-[#A84E4F] opacity-100"
-										: "text-[#999999]"
-								}`}
+								className="cursor-pointer"
 							>
 								Profile
 							</a>
 							<a
 								href="#MobileShowcases"
 								onClick={handleModal}
-								className={`cursor-pointer hover:text-gray-500 ${
-									activeSection === "showcases"
-										? "border-b-2 border-[#A84E4F] opacity-100"
-										: "text-[#999999]"
-								}`}
+								className="cursor-pointer"
 							>
 								Showcases
 							</a>
 							<a
 								href="#MobileProjects"
 								onClick={handleModal}
-								className={`cursor-pointer hover:text-gray-500 ${
-									activeSection === "projects"
-										? "border-b-2 border-[#A84E4F] opacity-100"
-										: "text-[#999999]"
-								}`}
+								className="cursor-pointer"
 							>
 								Projects
 							</a>
 							<a
 								href="#MobileContact"
 								onClick={handleModal}
-								className={`cursor-pointer hover:text-gray-500 ${
-									activeSection === "contact"
-										? "border-b-2 border-[#A84E4F] opacity-100"
-										: "text-[#999999]"
-								}`}
+								className="cursor-pointer"
 							>
 								Contact
 							</a>

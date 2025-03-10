@@ -10,16 +10,22 @@ const MobileContentSection = () => {
 			<section id="MobileProfile" className="max-w-screen">
 				<ProfileSection />
 			</section>
-			<section id="MobileShowcases" className="max-w-screen">
+			<section
+				id="MobileShowcases"
+				className="max-w-screen flex justify-center"
+			>
 				<ShowcasesSection />
 			</section>
 			<section
 				id="MobileProjects"
-				className="max-w-screen max-[400px]:mt-20"
+				className="max-w-screen flex justify-center max-[400px]:mt-20"
 			>
 				<ProjectsSection />
 			</section>
-			<section id="MobileContact" className="max-w-screen h-auto mt-40">
+			<section
+				id="MobileContact"
+				className="max-w-screen flex justify-center h-auto mt-40"
+			>
 				<ContactSection />
 			</section>
 		</div>

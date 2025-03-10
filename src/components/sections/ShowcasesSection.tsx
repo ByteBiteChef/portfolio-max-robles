@@ -7,7 +7,7 @@ const ShowcasesSection = () => {
 		window.open("https://github.com/ByteBiteChef");
 	};
 	return (
-		<div className="flex flex-col items-center justify-center h-screen w-full md:w-2/3 px-6">
+		<div className="flex flex-col items-center justify-center h-screen w-4/5">
 			<div className="flex w-full py-8 gap-6">
 				<div className="w-full lg:w-2/3 xl:w-2/3">
 					<h1 className="text-2xl font-bold">Showcases.</h1>
