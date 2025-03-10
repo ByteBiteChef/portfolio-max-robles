@@ -135,7 +135,7 @@ const Navbar = () => {
 						</div>
 						<div className="flex flex-col items-center justify-center h-full gap-4 text-2xl">
 							<a
-								href="#profile"
+								href="#MobileProfile"
 								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "profile"
@@ -146,7 +146,7 @@ const Navbar = () => {
 								Profile
 							</a>
 							<a
-								href="#showcases"
+								href="#MobileShowcases"
 								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "showcases"
@@ -157,7 +157,7 @@ const Navbar = () => {
 								Showcases
 							</a>
 							<a
-								href="#projects"
+								href="#MobileProjects"
 								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "projects"
@@ -168,7 +168,7 @@ const Navbar = () => {
 								Projects
 							</a>
 							<a
-								href="#contact"
+								href="#MobileContact"
 								onClick={handleModal}
 								className={`cursor-pointer hover:text-gray-500 ${
 									activeSection === "contact"
