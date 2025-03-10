@@ -93,78 +93,80 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			<div className="raleway flex justify-between md:hidden sticky bg-white top-0 pt-10 z-1">
-				<Link href={"/"} className="text-2xl roboto-slab ml-6">
-					MaxRobles.
-				</Link>
-				<button className="mr-10" onClick={handleModal}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						className="h-6 w-6 text-black"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={2}
-							d="M4 6h16M4 12h16m-7 6h7"
-						/>
-					</svg>
-				</button>
-				{isModalOpen && (
-					<div className="absolute top-0 right-0 w-full h-screen p-10 bg-white">
-						<div className="flex justify-end">
-							<button onClick={handleModal}>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									className="h-6 w-6 text-black"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
+			<div className="w-full flex justify-center md:hidden sticky top-0 pt-10 z-1 bg-white">
+				<div className="raleway flex w-4/5 justify-between">
+					<Link href={"/"} className="text-2xl roboto-slab">
+						MaxRobles.
+					</Link>
+					<button onClick={handleModal}>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							className="h-6 w-6 text-black"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M4 6h16M4 12h16m-7 6h7"
+							/>
+						</svg>
+					</button>
+					{isModalOpen && (
+						<div className="absolute top-0 right-0 w-full h-screen p-10 bg-white">
+							<div className="flex justify-end">
+								<button onClick={handleModal}>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										className="h-6 w-6 text-black"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth={2}
+											d="M6 18L18 6M6 6l12 12"
+										/>
+									</svg>
+								</button>
+							</div>
+							<div className="flex flex-col items-center justify-center h-full gap-8 text-2xl">
+								<a
+									href="#MobileProfile"
+									onClick={handleModal}
+									className="cursor-pointer"
 								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M6 18L18 6M6 6l12 12"
-									/>
-								</svg>
-							</button>
+									Profile
+								</a>
+								<a
+									href="#MobileShowcases"
+									onClick={handleModal}
+									className="cursor-pointer"
+								>
+									Showcases
+								</a>
+								<a
+									href="#MobileProjects"
+									onClick={handleModal}
+									className="cursor-pointer"
+								>
+									Projects
+								</a>
+								<a
+									href="#MobileContact"
+									onClick={handleModal}
+									className="cursor-pointer"
+								>
+									Contact
+								</a>
+							</div>
 						</div>
-						<div className="flex flex-col items-center justify-center h-full gap-8 text-2xl">
-							<a
-								href="#MobileProfile"
-								onClick={handleModal}
-								className="cursor-pointer"
-							>
-								Profile
-							</a>
-							<a
-								href="#MobileShowcases"
-								onClick={handleModal}
-								className="cursor-pointer"
-							>
-								Showcases
-							</a>
-							<a
-								href="#MobileProjects"
-								onClick={handleModal}
-								className="cursor-pointer"
-							>
-								Projects
-							</a>
-							<a
-								href="#MobileContact"
-								onClick={handleModal}
-								className="cursor-pointer"
-							>
-								Contact
-							</a>
-						</div>
-					</div>
-				)}
+					)}
+				</div>
 			</div>
 		</>
 	);
