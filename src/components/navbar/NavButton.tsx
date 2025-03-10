@@ -6,6 +6,7 @@ const sections = ["profile", "showcases", "projects", "contact"];
 
 const NavButton = () => {
 	const [activeSection, setActiveSection] = useState("");
+	const [fade, setFade] = useState(false);
 
 	useEffect(() => {
 		const sectionElements = document.querySelectorAll("section[id]");
@@ -20,7 +21,12 @@ const NavButton = () => {
 				if (entry.isIntersecting) {
 					const id = entry.target.getAttribute("id");
 					if (id) {
-						setActiveSection(id);
+						setFade(true);
+
+						setTimeout(() => {
+							setActiveSection(id);
+							setFade(false);
+						}, 500);
 					}
 				}
 			});
@@ -41,15 +47,18 @@ const NavButton = () => {
 
 	return (
 		<div className="absolute bottom-0 left-1/2 min-w-48 flex-col items-center justify-center hidden sm:flex hover:text-[#999999]">
-			{activeSection === "contact" ? (
-				<></>
-			) : (
+			{activeSection === "contact" ? null : (
 				<>
-					<a href={`#${nextSection}`} className="raleway uppercase">
+					<a
+						href={`#${nextSection}`}
+						className={`raleway uppercase transition-opacity duration-1000transition-opacity duration-1000 ${
+							fade ? "opacity-0" : "opacity-100"
+						}`}
+					>
 						{nextSection.charAt(0).toUpperCase() +
 							nextSection.slice(1)}
 					</a>
-					<div className="vertical-line hover:bg-[#999999]"></div>
+					<div className="vertical-line"></div>
 				</>
 			)}
 		</div>
