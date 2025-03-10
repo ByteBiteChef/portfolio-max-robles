@@ -34,7 +34,7 @@ const ProfileSection = () => {
 					</a>
 				</div>
 				<div className="flex justify-end items-end w-full md:w-auto lg:w-auto xl:w-auto mt-10">
-					<div className="flex flex-col justify-end items-end w-full">
+					<div className="flex flex-col justify-center items-center w-full md:justify-end md:items-end">
 						<Image
 							src="/profile-photo1.jpg"
 							alt="Profile"
