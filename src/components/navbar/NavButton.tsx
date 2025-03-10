@@ -46,12 +46,12 @@ const NavButton = () => {
 			: sections[0];
 
 	return (
-		<div className="absolute bottom-0 left-1/2 min-w-48 flex-col items-center justify-center hidden sm:flex hover:text-[#999999]">
+		<div className="absolute bottom-0 flex-col items-center justify-center hidden sm:flex w-full">
 			{activeSection === "contact" ? null : (
 				<>
 					<a
 						href={`#${nextSection}`}
-						className={`raleway uppercase transition-opacity duration-1000transition-opacity duration-1000 ${
+						className={`raleway uppercase transition-opacity duration-1000transition-opacity duration-1000 hover:text-[#999999] ${
 							fade ? "opacity-0" : "opacity-100"
 						}`}
 					>
