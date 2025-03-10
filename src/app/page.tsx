@@ -6,7 +6,6 @@ import MobileContentSection from "@/components/sections/MobileContentSection";
 
 const Home = () => {
 	const [isMobile, setIsMobile] = useState(false);
-	console.log("isMobile", isMobile);
 
 	useEffect(() => {
 		const handleResize = () => {
