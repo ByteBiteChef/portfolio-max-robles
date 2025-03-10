@@ -93,7 +93,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			<div className="raleway flex justify-between md:hidden sticky bg-white top-0 pt-10">
+			<div className="raleway flex justify-between md:hidden sticky bg-white top-0 pt-10 z-1">
 				<Link href={"/"} className="text-2xl roboto-slab ml-6">
 					MaxRobles.
 				</Link>
