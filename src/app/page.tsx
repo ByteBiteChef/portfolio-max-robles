@@ -1,42 +1,31 @@
-import React from "react";
-import ProfileSection from "../components/sections/ProfileSection";
-import ShowcasesSection from "../components/sections/ShowcasesSection";
-import ProjectsSection from "../components/sections/ProjectsSection";
-import ContactSection from "../components/sections/ContactSection";
-import NavButton from "../components/navbar/NavButton";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import ContentSection from "@/components/sections/ContentSection";
+import MobileContentSection from "@/components/sections/MobileContentSection";
+
 const Home = () => {
-	return (
-		<>
-			<section
-				className="flex flex-col items-center justify-center"
-				id="profile"
-			>
-				<ProfileSection />
-			</section>
+	const [isMobile, setIsMobile] = useState(false);
+	console.log("isMobile", isMobile);
 
-			<section
-				className="flex flex-col items-center justify-center"
-				id="showcases"
-			>
-				<ShowcasesSection />
-			</section>
+	useEffect(() => {
+		const handleResize = () => {
+			if (window.innerWidth < 768) {
+				setIsMobile(true);
+			} else {
+				setIsMobile(false);
+			}
+		};
 
-			<section
-				className="flex flex-col items-center justify-center"
-				id="projects"
-			>
-				<ProjectsSection />
-			</section>
+		window.addEventListener("resize", handleResize);
+		handleResize();
 
-			<section
-				className="flex flex-col items-center justify-center"
-				id="contact"
-			>
-				<ContactSection />
-			</section>
-			<NavButton />
-		</>
-	);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
+	return <>{isMobile ? <MobileContentSection /> : <ContentSection />}</>;
 };
 
 export default Home;
