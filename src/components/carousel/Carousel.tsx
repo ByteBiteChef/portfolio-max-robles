@@ -42,7 +42,7 @@ const cardData = [
 		stack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
 		description:
 			"A management system designed for the Volleyball Federation of Tucumán, Argentina. This ongoing project aims to streamline the administration of federated members, including players, referees, and club officials, improving organization and efficiency.",
-		link: "https://sis-fed2.vercel.app/",
+		link: "https://portfolio-max-robles.vercel.app/sisfed",
 	},
 	{
 		title: "AgroManager",
