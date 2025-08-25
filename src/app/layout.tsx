@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway, Roboto_Slab } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/navbar/Navbar";
-import Navside from "@/components/navbar/Navside";
+import NavWrapper from "@/components/navbar/NavWrapper";
 import NavContact from "@/components/navbar/NavContact";
 
 const geistSans = Geist({
@@ -42,8 +41,7 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${robotoSlab.variable} antialiased`}
 			>
-				<Navbar />
-				<Navside />
+				<NavWrapper />
 				<NavContact />
 				{children}
 			</body>
