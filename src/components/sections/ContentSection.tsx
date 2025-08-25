@@ -1,9 +1,35 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import NavButton from "../navbar/NavButton";
-import ContactSection from "./ContactSection";
 import ProfileSection from "./ProfileSection";
-import ProjectsSection from "./ProjectsSection";
-import ShowcasesSection from "./ShowcasesSection";
+
+// Lazy load below-the-fold sections to improve initial render
+const ShowcasesSection = dynamic(() => import("./ShowcasesSection"), {
+	ssr: false,
+	loading: () => (
+		<div className="w-full h-[60vh] flex items-center justify-center">
+			Loading…
+		</div>
+	),
+});
+
+const ProjectsSection = dynamic(() => import("./ProjectsSection"), {
+	ssr: false,
+	loading: () => (
+		<div className="w-full h-[60vh] flex items-center justify-center">
+			Loading…
+		</div>
+	),
+});
+
+const ContactSection = dynamic(() => import("./ContactSection"), {
+	ssr: false,
+	loading: () => (
+		<div className="w-full h-[60vh] flex items-center justify-center">
+			Loading…
+		</div>
+	),
+});
 
 const ContentSection = () => {
 	return (

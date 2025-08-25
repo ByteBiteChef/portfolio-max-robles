@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface CardData {
 	bgImage: string;
@@ -12,10 +13,14 @@ const Card = ({ data }: { data: CardData }) => {
 	return (
 		<div className="raleway flex flex-col gap-4 w-full">
 			<div className="relative min-h-45 max-h-42 border rounded-lg group overflow-hidden">
-				<div
-					className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-					style={{ backgroundImage: `url(${data.bgImage})` }}
-				></div>
+				<Image
+					src={data.bgImage}
+					alt={data.title}
+					fill
+					sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+					className="object-cover transition-transform duration-500 group-hover:scale-110"
+					priority={false}
+				/>
 
 				<div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
 

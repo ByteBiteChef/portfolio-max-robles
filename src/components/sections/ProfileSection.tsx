@@ -40,6 +40,8 @@ const ProfileSection = () => {
 							alt="Profile"
 							width={500}
 							height={500}
+							priority
+							sizes="(max-width: 768px) 320px, (max-width: 1024px) 400px, 480px"
 							className="w-80 h-80 md:px-0 lg:px-0 xl:px-0 md:w-80 md:h-80 lg:w-120 lg:h-120 xl:w-120 xl:h-120 object-cover"
 						/>
 						<div className=" w-105 h-16 bg-[#E8E6E6] hidden lg:block"></div>

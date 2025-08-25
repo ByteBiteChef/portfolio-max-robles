@@ -21,12 +21,20 @@ const cardData = [
 		link: "https://algos.es",
 	},
 	{
-		title: "Argentometro",
-		bgImage: "/argentometro.png",
-		stack: ["React Native", "CSS", "JavaScript"],
+		title: "FoodExpiry Reminder",
+		bgImage: "/FoodExpireReminder.png",
+		stack: ["React Native", "Expo", "Tailwind CSS", "TypeScript"],
 		description:
-			"Argentometro is an engaging and interactive quiz game. This app offers a variety of questions across multiple categories of Argentinian culture, challenging players with timed questions, levels, and rewards.",
-		link: "https://play.google.com/store/apps/details?id=com.nunyvega.argentometro&pcampaignid=web_share",
+			"FoodExpireReminder is a mobile app that helps users manage their food expiration dates and avoid food waste. It allows users to add food items, set expiration dates, and receive notifications when the food is about to expire.",
+		link: "https://apps.apple.com/us/app/foodexpiryreminder/id6749718643",
+	},
+	{
+		title: "Strong5x5-lite",
+		bgImage: "/5x5ScreenLogo.png",
+		stack: ["React Native", "CSS", "Expo", "TypeScript"],
+		description:
+			"Strong5x5 Lite is the easiest way to follow the classic 5x5 strength training program. Whether you’re just starting out or looking to get stronger, this app helps you log your workouts, track your progress, and stay consistent with your training.",
+		link: "https://apps.apple.com/fr/app/strong5x5-lite/id6751298926?l=en-GB",
 	},
 	{
 		title: "Administrative system",
@@ -34,7 +42,7 @@ const cardData = [
 		stack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
 		description:
 			"A management system designed for the Volleyball Federation of Tucumán, Argentina. This ongoing project aims to streamline the administration of federated members, including players, referees, and club officials, improving organization and efficiency.",
-		link: "https://sis-fed.vercel.app/",
+		link: "https://sis-fed2.vercel.app/",
 	},
 	{
 		title: "AgroManager",

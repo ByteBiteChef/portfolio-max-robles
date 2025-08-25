@@ -26,8 +26,9 @@ const ShowcasesSection = () => {
 					<Image
 						src="/profile-photo1.jpg"
 						alt="Profile"
-						width={500}
-						height={500}
+						width={64}
+						height={64}
+						sizes="64px"
 						className="rounded-full w-16 h-16 object-cover"
 					/>
 					<div className="flex flex-col items-start text-[#646464]">
