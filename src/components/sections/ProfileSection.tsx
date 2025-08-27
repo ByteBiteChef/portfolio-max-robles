@@ -10,9 +10,9 @@ const ProfileSection = () => {
 					</h1>
 
 					<p className="text-[#999999]">
-						I&apos;ve been a software developer for almost two
-						years. Before that, I spent 15 years as a chef de
-						cuisine, where I learned leadership, teamwork, and
+						I&apos;ve been a software developer for two years now.
+						Before that, I spent 15 years as a chef de cuisine,
+						where I learned leadership, teamwork, and
 						problem-solving, while also making great friends and
 						memories.
 					</p>
