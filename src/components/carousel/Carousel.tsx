@@ -37,6 +37,14 @@ const cardData = [
 		link: "https://apps.apple.com/fr/app/strong5x5-lite/id6751298926?l=en-GB",
 	},
 	{
+		title: "Tempo Échecs",
+		bgImage: "/tempo-echecs-logo.png",
+		stack: ["React Native", "Expo", "CSS", "JavaScript"],
+		description:
+			"A simple and reliable chess clock for two players. Set the starting time, add increments, and enjoy fair and timed chess games with an easy to use French interface.",
+		link: "https://apps.apple.com/app/tempo-%C3%A9checs/id6751537010",
+	},
+	{
 		title: "Administrative system",
 		bgImage: "/SisFed.png",
 		stack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
