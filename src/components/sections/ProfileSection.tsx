@@ -10,19 +10,21 @@ const ProfileSection = () => {
 					</h1>
 
 					<p className="text-[#999999]">
-						I&apos;ve been a software developer for two years now.
-						Before that, I spent 15 years as a chef de cuisine,
-						where I learned leadership, teamwork, and
-						problem-solving, while also making great friends and
-						memories.
+						I&apos;ve been a <strong>software developer</strong> for
+						two years now. Before that, I spent 15 years as a chef
+						de cuisine, where I learned <strong>leadership</strong>,{" "}
+						<strong>teamwork</strong>, and{" "}
+						<strong>problem solving</strong>, while also making
+						great friends and memories.
 					</p>
 					<p className="text-[#999999]">
-						My focus has been learning React, TypeScript,
-						Next.js,and other technologies. I love building things
-						from scratch, which is something I find exciting about
-						both cooking and programming. Another similarity is
-						finding simple solutions to problems that aren&apos;t
-						always so simple.
+						My focus has been learning <strong>React</strong>,{" "}
+						<strong>TypeScript</strong>, <strong>Next.js</strong>{" "}
+						,and other technologies. I love building things from
+						scratch, which is something I find exciting about both
+						cooking and programming. Another similarity is finding
+						simple solutions to problems that aren&apos;t always so
+						simple.
 					</p>
 					<a
 						className="cursor-pointer font-semibold text-lg underline w-fit"
