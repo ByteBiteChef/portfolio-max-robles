@@ -29,6 +29,14 @@ const cardData = [
 		link: "https://apps.apple.com/us/app/foodexpiryreminder/id6749718643",
 	},
 	{
+		title: "ToneWise Training",
+		bgImage: "/screenIcon.png",
+		stack: ["React Native", "Expo", "CSS", "TypeScript"],
+		description:
+			"ToneWise Training is an Ear training app to practice musical intervals, get immediate feedback, and improve melody and harmony recognition.",
+		link: "https://apps.apple.com/us/app/tonewise-training/id6751984759",
+	},
+	{
 		title: "Strong5x5-lite",
 		bgImage: "/5x5ScreenLogo.png",
 		stack: ["React Native", "CSS", "Expo", "TypeScript"],
