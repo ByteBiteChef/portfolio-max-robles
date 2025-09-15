@@ -27,7 +27,7 @@ const robotoSlab = Roboto_Slab({
 });
 
 export const metadata: Metadata = {
-	title: "Max Robles | Frontend Developer",
+	title: "Max Robles | Software Developer",
 	description: "Max's Portfolio",
 };
 
