@@ -21,6 +21,22 @@ const cardData = [
 		link: "https://algos.es",
 	},
 	{
+		title: "RecipeHub",
+		bgImage: "/recipehub.png",
+		stack: [
+			"React Native",
+			"Expo",
+			"TypeScript",
+			"Node.js",
+			"Firebase Firestore",
+			"React Native ML Kit",
+		],
+		description:
+			"RecipeHub is a fullstack iOS app for professional chefs and restaurants. It lets users create, share, and organize recipes, generate new ones with AI, scan handwritten notes using OCR, and collaborate with team members in shared workspaces.",
+
+		link: "https://apps.apple.com/us/app/recipehub-for-chefs-by-chefs/id6753018102",
+	},
+	{
 		title: "FoodExpiry Reminder",
 		bgImage: "/FoodExpireReminder.png",
 		stack: ["React Native", "Expo", "Tailwind CSS", "TypeScript"],
