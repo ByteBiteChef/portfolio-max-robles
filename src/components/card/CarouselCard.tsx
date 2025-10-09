@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -10,9 +12,31 @@ interface CardData {
 }
 
 const Card = ({ data }: { data: CardData }) => {
+	const handleMobileClick = () => {
+		// Only handle click on mobile/tablet (screen width < 1024px)
+		if (window.innerWidth < 1024) {
+			window.open(data.link, "_blank", "noopener,noreferrer");
+		}
+	};
+
+	const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+		// Handle keyboard navigation for accessibility on mobile
+		if (window.innerWidth < 1024 && (e.key === "Enter" || e.key === " ")) {
+			e.preventDefault();
+			window.open(data.link, "_blank", "noopener,noreferrer");
+		}
+	};
+
 	return (
 		<div className="raleway flex flex-col gap-4 w-full">
-			<div className="relative min-h-45 max-h-42 border rounded-lg group overflow-hidden">
+			<div
+				className="relative min-h-45 max-h-42 border rounded-lg group overflow-hidden lg:cursor-default cursor-pointer"
+				onClick={handleMobileClick}
+				onKeyDown={handleKeyDown}
+				role="button"
+				tabIndex={0}
+				aria-label={`Open ${data.title} project`}
+			>
 				<Image
 					src={data.bgImage}
 					alt={data.title}
@@ -22,9 +46,11 @@ const Card = ({ data }: { data: CardData }) => {
 					priority={false}
 				/>
 
-				<div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+				{/* Overlay - only show on desktop hover */}
+				<div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 lg:group-hover:opacity-70"></div>
 
-				<div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+				{/* Tech stack - only show on desktop hover */}
+				<div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
 					{data.stack?.map((item, index) => (
 						<p key={index} className="text-lg underline">
 							{item}
@@ -41,7 +67,7 @@ const Card = ({ data }: { data: CardData }) => {
 					href={data.link}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-md w-32"
+					className="text-md w-32 hover:underline focus:underline focus:outline-none"
 				>
 					VIEW PROJECT
 				</a>
